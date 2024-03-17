@@ -1,0 +1,55 @@
+body{
+
+  position: relative;
+  width: 511px;
+  height: 517px;
+  
+  /* background: #FFFFFF; */
+  background: #0B2434;
+}
+
+main{
+  
+  position: relative;
+  max-width: 360px;
+  height: 379px;
+  top: 69px;
+  left: 76px;
+  border-radius: 20px;
+  background: #FFFFFF;
+  display: flex;
+  justify-content: space-around;
+ 
+}
+.innerBox{
+  align-self: center;
+ width: 250.88px;
+  /* height: 252.8px; */
+  top: 33.28px;
+  left: 34.56px;
+  display: grid;
+  /* grid-template-columns: 60px 60px 60px 60px 60px ; */
+  grid-template-columns:auto auto auto auto auto;
+grid-template-rows: auto;
+grid-gap: 15px;
+
+
+}
+
+.Die{
+  align-self: center;
+
+/* justify-self: stretch; */
+width: 35.84px;
+height: 35.84px;
+top: 134.4px;
+left: 88.32px;
+font-family: Karla;
+font-size: 21px;
+font-weight: 700;
+line-height: 24px;
+letter-spacing: 0em;
+text-align: center;
+box-shadow: 0px 2px 2px 0px #00000026;
+
+}
