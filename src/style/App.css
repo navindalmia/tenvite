@@ -11,7 +11,7 @@ body{
 main{
   
   position: relative;
-  max-width: 360px;
+  max-width: 800px;
   height: 379px;
   top: 69px;
   left: 76px;
@@ -19,9 +19,24 @@ main{
   background: #FFFFFF;
   display: flex;
   justify-content: space-around;
- 
+  flex-direction: column;
+  align-items: center;
 }
-.innerBox{
+.title {
+  font-size: 40px;
+  margin: 0;
+}
+
+.instructions {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  margin-top: 0;
+  text-align: center;
+}
+
+
+
+.dice-container{
   align-self: center;
  width: 250.88px;
   /* height: 252.8px; */
@@ -32,7 +47,7 @@ main{
   grid-template-columns:auto auto auto auto auto;
 grid-template-rows: auto;
 grid-gap: 15px;
-
+/* margin-bottom: 10px; */
 
 }
 
@@ -51,5 +66,27 @@ line-height: 24px;
 letter-spacing: 0em;
 text-align: center;
 box-shadow: 0px 2px 2px 0px #00000026;
+border-radius: 10px;
+/* background: #59e38e; */
+}
 
+.rollDice{
+  position: relative;
+  width: 100px;
+  height: 50px;
+  /* top: 5.76px;
+  left: 21.12px; */
+  align-self: center;
+  
+  border-radius: 6px;
+font-family: Karla;
+font-size: 16px;
+font-weight: 700;
+line-height: 19px;
+letter-spacing: 0em;
+text-align: center;
+background: #5035FF;
+/* color: #FFFFFF; */
+box-shadow: 0px 3.1999998092651367px 7.679999828338623px 0px #0000002E;
+cursor: pointer;
 }
