@@ -34,7 +34,16 @@ main{
   text-align: center;
 }
 
+.central{
+width: 100%;
+display: flex;
+justify-content: space-around;
+flex-direction: row;
+align-items: center;
+font-family: 'Inter', sans-serif;
+  font-weight: 400;
 
+}
 
 .dice-container{
   align-self: center;
