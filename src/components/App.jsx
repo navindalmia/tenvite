@@ -11,17 +11,12 @@ function App() {
   const [dice, setDice] = useState(allNewDice())
   const [tenzies, setTenzies] = useState(false)
   const [userScore, setUserScore] = useState(0)
-
   const [hiScore, setHiScore] = useState(() => {
     // getting stored value
     const saved = localStorage.getItem("hiScore");
-    const initialValue = JSON.parse(saved);
-    
-    if (initialValue == null) {
-     
-
+    const initialValue = JSON.parse(saved);    
+    if (initialValue == null) {   
       localStorage.setItem("hiScore", JSON.stringify(999));
-
     }
     return initialValue || 999;
   });
@@ -115,7 +110,7 @@ function App() {
 
   function checkTenzies(el, index, arr) {
 
-    console.log("b4!")
+    
     if (index === 0) {
 
       if (el.held === true)
@@ -150,10 +145,14 @@ function App() {
         <p className="instructions">Roll until all dice are the same. Click each die to freeze it at its current value between rolls.</p>
 
         <div className="central">
-          <div className="your-score" >Your Score</div>
-          <br />
-          {userScore}
-          {/* <div className="your-score-value" >10</div> */}
+          <div className="central-your-score">
+            <div className="your-score" >Your Score</div>
+              <br />
+              <div className="Die" >
+              {userScore}
+              </div>
+          </div>
+        
 
           <div className="dice-container">
             {diceElements}
@@ -161,9 +160,17 @@ function App() {
 
 
           </div>
+
+          <div className="central-your-score">
           <div className="hi-score" >Best Score</div>
           <br />
+          <div className="Die" >
           {hiScore}
+          </div>
+          </div>
+
+
+
         </div>
         <button onClick={rollDice} className="rollDice">{tenzies ? "New Game" : "Roll"}</button>
         <button onClick={clearHiScore} className="rollDice">Clear Best Score</button>

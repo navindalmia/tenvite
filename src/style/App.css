@@ -33,6 +33,12 @@ main{
   margin-top: 0;
   text-align: center;
 }
+.central-your-score{
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+}
 
 .central{
 width: 100%;

@@ -12,14 +12,9 @@ const diceColor = props.held? {backgroundColor : "#59E391"}:{backgroundColor : "
 
 
 return(
-
-
-
     <>
 <button  onClick={props.hold} className="Die" style={diceColor}>
     {props.value}
-
-
 
 </button>
 
