@@ -3,13 +3,13 @@ About the Game: Roll until all 10 dice are the same. Click each die to freeze it
 
 # Steps to launch the application(assuming node is already installed):
 1. Download the folder and in command prompt traverse to the root folder 'tenvite'
-2. Install vite if not already
+2. Install vite if not already<br>
     npm install -g vite
-3. Run the following command:
-    npm install
+3. Run the following command:<br>
+    npm install <br>
     npm run dev
-
-
+<br>
+Once the server is up and running, enjoy the game and try to beat your own best score!<br>
 
 ![Screenshot](images/Hit-a-Tenzie.png "Beat Yourself!")
 
